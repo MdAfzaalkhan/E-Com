@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card-cat:hover{
+    color: #2874f0;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in;
+}

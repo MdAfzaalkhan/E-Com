@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.reg-wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #74b9ff;
+}
+.reg-wrap{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 80vh;
+}
+.right{
+    background-color: #fff;
+    border-radius: 0 5px 5px 0;
+}
+.left{
+    border-radius: 5px 0 0 5px;
+}

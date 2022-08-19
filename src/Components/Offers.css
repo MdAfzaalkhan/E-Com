@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.offer-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: black;
+}
+.offer-card > img {
+  width: 230px;
+  height: 250px;
+}
+.card-wrap {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  justify-content: center;
+  background-color: aliceblue;
+}
+.offer-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+ 
+}
+.offer-up {
+  border-bottom: 1px solid lightgray;
+  padding: 10px 0;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+}
+.text-offer{
+  font-size: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: gray;
+}
+/* .card-wrap:hover{
+  color: red;
+} */
+.rating-offer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: white;
+  padding-left: 5px;
+  padding-right: 3px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: #388e3c;
+  width: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+  margin-top: 5px;
+}
+.offer-card > p{
+  font-size: medium;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 4px 0; 
+}
+.price-offer{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.rate-offer{
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  color: black;
+  font-weight: 400;
+  margin-top: 10px;
+
+}
+.disc-offer{
+  font-size: small;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #388e3c;
+}
