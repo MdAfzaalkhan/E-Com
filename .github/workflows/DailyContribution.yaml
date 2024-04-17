@@ -1,0 +1,30 @@
+name: Daily Contribution
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Run the workflow at 12:00 AM (midnight) UTC every day
+
+jobs:
+  contribute:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Commit something
+        run: |
+          # Create a new file in the repository
+          touch daily-contribution.txt
+          echo "This is a daily contribution." > daily-contribution.txt
+
+          # Commit the changes
+          git config --local user.email "afzaalk137@gmail.com"
+          git config --local user.name "Md Afzaal Khan"
+          git add .
+          git commit -m "Daily contribution"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
